@@ -1,0 +1,5 @@
+appName: flask-app
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5000
