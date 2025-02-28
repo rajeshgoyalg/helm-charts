@@ -1,4 +1,10 @@
 appName: flask-app
+
+image:
+  repository: rajeshgoyalg/flask-app
+  tag: v20250228-63f7f59  # Change this manually when updating the image version (e.g., v2, v3)
+  pullPolicy: IfNotPresent
+
 service:
   type: NodePort
   port: 80
