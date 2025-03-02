@@ -1,0 +1,14 @@
+appName: python-flask-app
+
+image:
+  repository: rajeshgoyalg/python-flask-app
+  tag: latest
+  pullPolicy: Always  # Ensures Kubernetes always pulls the latest image
+
+replicas: 2
+containerPort: 5000
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5000
